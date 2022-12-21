@@ -429,5 +429,8 @@ background-color: rgba(175, 210, 255, 0.719);
     
 }
 
+.navbar li {
+    font-weight: bold;
+    font-size: 30px;
+}
 
-    
