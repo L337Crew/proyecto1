@@ -432,5 +432,29 @@ background-color: rgba(175, 210, 255, 0.719);
 .navbar li {
     font-weight: bold;
     font-size: 30px;
+    
 }
 
+.navbar-brand {
+    font-size: 40px;
+    padding-left: 20px;
+    
+    
+    
+}
+
+.encabezado h2 {
+    color: aliceblue;
+    
+}
+
+.cuotas {
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    
+}
+.futer {
+    width:auto;
+    height: 100px
+}

@@ -7,6 +7,7 @@
     <title>PagosBS</title>
 
     <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
@@ -14,12 +15,13 @@
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <div><a class="navbar-brand" href="#">
-                <img src="../assets/img/logouz2.png" alt="Logo" width="150" height="100" class="d-inline-block align-text-center m-2 " class="textoFoto">Uz</a></div>
+                <img class="img-fluid" src="../assets/img/logouz2.png" alt="Logo" width="150" height="100" class="d-inline-block align-text-center">Uz</a>
+            </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Procesadores
@@ -51,64 +53,113 @@
 
     <header>
         <div class="encabezado">
-            <h1>Compras</h1>
+            <h2 class=" fs-1 m-3">Compras</h2>
          </div>
     </header>
     <main>
 
-        <div class="compra1660S">
+        <div class="cajas row mx-auto">
+            <div class="caja col-12 col-md-6 col-lg-5">
+                <img class="img-fluid" src="../assets/img/1660super.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 mt-5 ">
+                <h1 class="fs-1 ">Placa de Video Zotac GeForce GTX 1660 SUPER 6GB GDDR6 Twin Fan</h1>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+                <img class="img-fluid" src="../assets/img/1660super2.jpg" alt="">
+            </div>
+            <div class="col-6 col-md-3 mb-5">
+                <span class="fs-1">$ 97.900 <p>Precio especial</p></span>
+            </div>
+            <div class="col-6 col-md-3 mb-5 pb-5">
+                <p class="fs-1">$ 130.599</p>
+                <a class="cuotas" href="#">Ver Cuotas</a>
+            </div>
 
-            <div class="imgCompra1660S">
-              <img src="../assets/img/1660super.jpg" alt="1660SuperCaja">
-              <img src="../assets/img/1660super2.jpg" alt="1660SuperFront">
-            </div>
-            <div class="datosCompra">
-                <h1>Placa de Video Zotac GeForce GTX 1660 SUPER 6GB GDDR6 Twin Fan</h1>
-                <div class="precioefec"><h2>97.900$</h2><p> Efectivo</p> <button class="btnCompra">Comprar</button></div>
-                <div class="preciotarj"><h3>130.599$</h3><p>Tarjeta</p> <button class="btnCompra">Comprar</button></div>
-                <div class="caracteristica">
-                    <h4>Caracteristicas</h4>
-                    <p>Tipo: Pcie</p>
-                    <p>Entrada de Video: No</p>
-                    <p>Ancho de la placa: 111mm</p>
-                    <p>Largo de la placa: 151mm</p>
-                    <p>Espesor de la placa:2.0 slots</p>
-                    <p>Conectividad:</p>
-                    <p>Vga: No</p>
-                    <p>HDMI: 1</p>
-                    <p>Energia</p>
-                    <p>Consumo: 75 W</p>
-                    <p>Watts totales recomendados: 300W</p>
-                    <p>Extras</p>
-                    <p>Velocidad de memoria: 12000Mhz</p>
-                    <p>Tipo de memoria: GDDR6</p>
-                    <p> Capacidad de memoria: 4 Gb</p>
-                </div>
-            </div>
-           
         </div>
+        <div class=" tabla row justify-content-around">
+        <section class="col-12 col-md-12 col-lg-8 d-flex">
+            <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th class="text-white fs-2">Caracteristicas</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>Tipo de conexion</th>
+                    <td>Pcie</td>
+                </tr>
+                <tr>
+                    <th>Entrada de video</th>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <th>Ancho de la placa</th>
+                    <td>111mm</td> 
+               </tr>
+               <tr>
+                    <th>Espesor de la placa</th>
+                    <td>151mm</td>
+               </tr>
+               <tr>
+                    <th>Vga</th>
+                    <td>No</td>
+               </tr>
+               <tr>
+                    <th>Hdmi</th>
+                    <td>1</td>
+               </tr>
+               <tr>
+                    <th>Consumo W</th>
+                    <td>75W</td>
+               </tr>    
+               <tr>
+                    <th>Watts recomendados</th>
+                    <td>300W</td>
+               </tr>
+               <tr>
+                   <th>Velocidad de memoria</th>
+                   <td>12000Mhz</td>
+                </tr>
+                <tr>
+                    <th>Tipo de memoria</th>
+                    <td>Gddr6</td>
+                </tr>
+                <tr>
+                    <th>Capacidad de memoria</th>
+                    <td>4 GB</td>
+                </tr>
 
+                </tbody>
+            </table>
+        </section>
+    </div>
+       
 
     </main>
     <aside>
 
     </aside>
-    <footer>
-       
-        <div class="footer">
-            <div class="derechos">
-                <h4>Copyright. Todos los derechos reservados</h4>
-            </div>
-            <div class="redes">
-                <p>Seguinos en nuestras redes:</p>
-                <a href="https://www.facebook.com" target="_blank"> <img src="../assets/img/face.jpg" alt="logoface"></a>
-
-                <a href="https://twitter.com/?lang=es" target="_blank"> <img src="../assets/img/twitter.jpg" alt="logotwit"></a>
-                <a href="https://www.instagram.com" target="_blank"> <img src="../assets/img/instagram.jpg" alt="logoinsta"></a>
+    <footer class=" futer bg-dark text-white">
+        <div class="container">
+            <nav class="row align-items-center ">
+                <a class="col-6 ol-md-6 col-xl-6 text-reset align-items-center text-decoration-none d-flex " href="">
+                    <img class="img-fluid" src="../assets/img/logouz2c.png" alt="logo text ">Copyright
+                </a>
                 
-            </div>
+                <ul class="col-6 col-md-6 col-xl-6 list-unstyled ">
+                   <li class="font-weight-">Seguinos:</li>
+                <li class="" >
+                    <a class="text-reset" href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a class="text-reset" href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a class="text-reset" href=""><i class="fa-brands fa-twitter"></i></a>    
+                </li>
+
+                </ul>
+            </nav>
         </div>
-     
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
