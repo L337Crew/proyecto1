@@ -1,134 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Todo lo que buscas en procesadores y graficas AMD NVIDIA e INTEL">
+        <title>index</title>
+        <link rel="shortcut icon" href="./assets/img/logouz2c.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body class="bg-black">
 
-    <body>
-        <nav class="navegador">
-            <ul>
-                <div class="logo">
-                    <img src="./assets/img/logo2.jpg" alt="logotipo">
+        <nav class="navbar navbar-expand-lg bg-secondary fw-bold fs-2 ">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="./index.html">
+                    <img class="img-fluid" src="../assets/img/logouz2.png" alt="Logo" width="150" height="100" class="d-inline-block align-text-center"></a>
                 </div>
-                <li>
-                    <a class="inicio" href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a class="procesadores" href="">Procesadores</a>
-                    <ul class="l1">
-                        <li> <a href="./pages/procesadoresAmd.html">Amd</a></li>
-                        <li> <a href="">Intel</a></li>    
-                    </ul>            
-                </li>
-                <li>
-                    <a class="graficas" href="">Graficas</a>
-                    <ul class="l2">
-                        <li><a href="">Amd</a></li>
-                        <li><a href="./pages/graficasNvidia.html">Nvidia</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Procesadores</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item fw-normal fs-3" href="./pages/procesadores.html">Amd</a></li>
+                              <li><a class="dropdown-item fw-normal fs-3" href="#">Intel</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Graficas</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item fw-normal fs-3" href="#">Amd</a></li>
+                              <li><a class="dropdown-item fw-normal fs-3  " href="./pages/graficasNvidia.html">Nvidia</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/contactanos.html">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    <a class="sucursales" href="">Sucursales</a>
-                </li>
-                <li>
-                    <a class="contactanos" href="./pages/contactanos.html">Contactanos</a>
-                </li>
-                 
-            </ul>
-
+                </div>                        
+            </div>
         </nav>
-
         <header>
 
-            <div class="banner"></div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                   <div class="carousel-item active">
+                      <img src="./assets/img/bannerNvidiaAmd.jpg" class="d-block w-100" alt="...">
+                   </div>
+                   <div class="carousel-item">
+                      <img src="./assets/img/bannerIntell.jpg" class="d-block w-100" alt="...">
+                   </div>
+                   <div class="carousel-item">
+                      <img src="./assets/img/banerAmd.jpg" class="d-block w-100" alt="...">
+                   </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
         </header>
 
         <main>
-            
-            <div class="ultimosIngresos">
+            <div>
+                <div class="videoAmd w-100 d-flex justify-content-center mt-5 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vvF1eq5kjPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
                 
-                <h2>Ultimos Ingresos:  </h2>
-                
-               
-                 <div class="ingreso1">
-                    <a href="www.google.com"><img src="./assets/img/6750.jpg" alt="amd6750"></a
-                        <p>Amd 6750</p>
-                 </div>
-                 <div class="ingreso2">
-                    <a href="www.google.com"><img src="./assets/img/3080.jpg" alt="nvidia3080"></a   
-                    <p> Nvidia 3080</p>   
-                 </div>
-                 <div class="ingreso3">
-                    <a href="www.google.com"><img src="./assets/img/ryzen9.jpg" alt="ryzen9"></a
-                    <p>Ryzen 9</p>
-                    <button class="btnIngresos"> Ver mas</button> 
-                 </div>
-                
-                 
+            <div class=" row mx-0 text-white">
+                <h3 class="d-flex justify-content-around col-12 mt-5 mb-5 fw-semibold">5 años brindando buenos precios, calidad y confianza a nuestros clientes:</h3>
             </div>
 
-            <div class="videoAmd">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vvF1eq5kjPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        
-        
-            <h1 class="slogan">X años brindando buenos precios, calidad y confianza a nuestros clientes...</h1>
-
-            <section class="tarjetas-opiniones">
-
-                <div class="opinion">
-                    <img src="./assets/img/2098873 (1).png" alt="imgUser">
-                    <div class="opinion-info">
-                        <h3 class="nombre">Lore Mipsum</h3>
-                        <p class="comentario">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, quidem...</p>
-                        <button class="btn">ver mas</button>
-
-                    </div>
-
+          <section class="testimonios d-flex flex-column justify-content-center align-items-center conteiner">
+                <div class="testimonios_header d-flex flex-column align-items-center justify-content-center mt-5 mb-5">
+                  <h1 class="bg-dark border border-light rounded text-white">Reseñas de clientes</h1>
                 </div>
 
-                <div class="opinion">
-                    <img src="./assets/img/2098873 (1).png" alt="imgUser">
-                    <div class="opinion-info">
-                        <h3 class="nombre">Eli Teos</h3>
-                        <p class="comentario">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, quidem...</p>
-                        <button class="btn">ver mas</button>
-
+             <div class="testimonios_contenedor d-flex flex-wrap justify-content-evenly align-items-center ">
+                <div class="testimonios_caja col-12 col-md-5 col-lg-5">
+                    <div class="caja_top d-flex justify-content-between align-items-center mb-4">
+                        <div class="perfil d-flex align-items-center">
+                            <div class="perfil_img">
+                                <img src="./assets/img/perfil_mujer1.jpg" alt="fotosuario">
+                            </div>
+                            <div class="name_user d-flex flex-column">
+                                <strong class="fs-4"> Luz Linares</strong>
+                                <span class="fw-bold text-secondary"> @LuLI</span>
+                            </div>
+                        </div>
+                        <div class="reseña ">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-
+                    <div class="comentarios_cliente">
+                        <p class="fw-semibold">La verdad ni un problema, todo en la compra salio perfecto.</p>
+                    </div>
                 </div>
-                
-               
-            </section>
+                <div class="testimonios_caja col-12 col-md-5 col-lg-5">
+                    <div class="caja_top d-flex justify-content-between align-items-center mb-4">
+                        <div class="perfil d-flex align-items-center">
+                            <div class="perfil_img">
+                                <img src="./assets/img/perfil_hombre1.jpg" alt="fotoUsuario">
+                            </div>
+                            <div class="name_user d-flex flex-column">
+                                <strong class="fs-4"> Fernando Alegre</strong>
+                                <span class="fw-bold text-secondary"> @FerJ12</span>
+                            </div>
+                        </div>
+                        <div class="reseña ">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="comentarios_cliente">
+                        <p class="fw-semibold">Tuve problemas con el servicio de entrega pero lo resolvieron rapido.</p>
+                    </div>
+                </div>
+                <div class="testimonios_caja col-12 col-md-5 col-lg-5">
+                    <div class="caja_top d-flex justify-content-between align-items-center mb-4">
+                        <div class="perfil d-flex align-items-center">
+                            <div class="perfil_img">
+                                <img src="./assets/img/perfil_mujer2.jpg" alt="fotoUsuario">
+                            </div>
+                            <div class="name_user d-flex flex-column">
+                                <strong class="fs-4"> Ingrid Lucero</strong>
+                                <span class="fw-bold text-secondary"> @IngridStradiv</span>
+                            </div>
+                        </div>
+                        <div class="reseña ">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="comentarios_cliente">
+                        <p class="fw-semibold">Tienen los mejores precios que encontre, garantia y responsabilidad en las entregas.</p>
+                    </div>
+                </div>
 
-            
-    
-        </main>
+                <div class="testimonios_caja col-12 col-md-5 col-lg-5">
+                    <div class="caja_top d-flex justify-content-between align-items-center mb-4">
+                        <div class="perfil d-flex align-items-center">
+                            <div class="perfil_img">
+                                <img src="./assets/img/perfil_hombre2.jpg" alt="fotoUsuario">
+                            </div>
+                            <div class="name_user d-flex flex-column">
+                                <strong class="fs-4"> Pablo Fernandez</strong>
+                                <span class="fw-bold text-secondary"> @PFBJ</span>
+                            </div>
+                        </div>
+                        <div class="reseña ">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="comentarios_cliente">
+                        <p class="fw-semibold">Facil de comprar, buen precio y entrega en tiempo. Totalmente recomendable.</p>
+                    </div>
+                </div>
+             </div>
+          </section>    
+        </main>  
+        
         <aside>
-    
+      
         </aside>
+
         <footer>
-           <fieldset>
-            <div class="footer">
-                <div class="derechos">
-                    <h4>Copyright. Todos los derechos reservados</h4>
+          <div class="conteiner-fluid">
+            <div class="row p-5 bg-dark text-white w-100 m-0">
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <div class="">
+                        <div class="d-flex align-items-center">
+                          <p class="h3 text-warning">Uz</p>
+                        </div>
+                    </div> 
                 </div>
-                <div class="redes">
-                    <p>Seguinos en nuestras redes:</p>
-                    <a href="https://es-la.facebook.com" target="_blank"><img src="./assets/img/face.jpg" alt="logoface"></a>
-                    <a href="https://twitter.com/?lang=esom" target="_blank"><img src="./assets/img/twitter.jpg" alt="logotwit"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="./assets/img/instagram.jpg" alt="logoinsta"></a>
-                    
+
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <p class="h5 mb-3">Links</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="">Terminos y condiciones</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="">Politicas de privacidad</a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <p class="h5 mb-3">Redes</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="">Instagram</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="">Facebook</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="">Twitter</a>
+                    </div>
                 </div>
             </div>
-           </fieldset>  
-        </footer>
-    
-    
-    </body>
+          </div>
+        </footer> 
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   </body>
 </html>
