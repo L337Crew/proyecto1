@@ -1,0 +1,28 @@
+.precio {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    >a {
+      @include btn(100px,$colorVenta);
+      color: white;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $colorVenta2;
+      }
+    }
+    div {
+      h3{
+        font-weight: bold;
+        font-size: 40px;
+        
+      }
+      p {
+        font-weight: 40px;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
